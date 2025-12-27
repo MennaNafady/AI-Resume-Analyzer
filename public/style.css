@@ -1,0 +1,100 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Match percentage */
+.match {
+  font-size: 36px;
+  font-weight: bold;
+  color: #16a34a;
+  text-align: center;
+}
+
+/* Skill chips */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.skill.good {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.skill.missing {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* AI section */
+pre {
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
