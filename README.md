@@ -30,6 +30,8 @@ An AI-powered tool to analyze resumes against job descriptions, providing a **ma
       git clone https://github.com/yourusername/ai-resume-analyzer.git
    cd ai-resume-analyzer
 2.npm install
+
+
 3.Create a .env file in the root folder then add:OPENAI_API_KEY=your_openai_api_key_here
 
 
