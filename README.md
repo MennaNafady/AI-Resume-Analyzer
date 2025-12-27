@@ -31,12 +31,16 @@ An AI-powered tool to analyze resumes against job descriptions, providing a **ma
    cd ai-resume-analyzer
 2.npm install
 3.Create a .env file in the root folder then add:OPENAI_API_KEY=your_openai_api_key_here
+
+
 4.Start the server:node server.js
+
+
 5.Open your browser and visit:http://localhost:3000
 
 <img width="1359" height="564" alt="Screenshot 2025-12-27 200216" src="https://github.com/user-attachments/assets/fc3c34e1-d178-49db-8a4f-645d96f40c48" />
 
 <img width="1365" height="618" alt="Screenshot 2025-12-27 200233" src="https://github.com/user-attachments/assets/466219a3-1db7-4331-a538-2b85da7138a1" />
-<img width="1091" height="528" alt="image" src="https://github.com/user-attachments/assets/dcfa70d0-698c-4ba4-a4b9-9f00f4170ee8" />
+
 
 
