@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Resume Analyzer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🤖 AI Resume Analyzer</h1>
+
+  <form method="POST" action="/analyze">
+    <textarea name="resume" placeholder="Paste your resume here..." required></textarea>
+    <textarea name="job" placeholder="Paste job description here..." required></textarea>
+    <button type="submit">Analyze Resume</button>
+  </form>
+
+  <% if (result) { %>
+
+    <div class="card">
+      <h2>Match Score</h2>
+      <div class="match"><%= result.percentage %>%</div>
+    </div>
+
+    <div class="card">
+      <h2>Matched Skills</h2>
+      <div class="skills">
+        <% result.matched.forEach(skill => { %>
+          <span class="skill good"><%= skill %></span>
+        <% }) %>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Missing Skills</h2>
+      <div class="skills">
+        <% result.missing.forEach(skill => { %>
+          <span class="skill missing"><%= skill %></span>
+        <% }) %>
+      </div>
+    </div>
+
+  <% } %>
+
+  <% if (aiTips) { %>
+    <div class="card">
+      <h2>🤖 AI Suggestions</h2>
+      <pre><%= aiTips %></pre>
+    </div>
+  <% } %>
+
+</div>
+
+</body>
+</html>
